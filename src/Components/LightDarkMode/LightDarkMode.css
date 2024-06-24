@@ -1,0 +1,15 @@
+.theme-toggle-button {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: var(--title-color);
+    transform: translateY(-5px);
+  }
+  
