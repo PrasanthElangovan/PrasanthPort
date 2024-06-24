@@ -9,9 +9,9 @@ const ScrollUp = () => {
     })
 
 return (
-    <a href="#" className="scrollup">
+    <button  className="scrollup">
         <i className="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    </button>
 )
 }
 export default ScrollUp
