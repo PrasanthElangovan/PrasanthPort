@@ -1,5 +1,5 @@
 .footer{
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .footer__container{
@@ -17,6 +17,18 @@
 .footer__link:hover{
     color: var(--title-color);
 }
+.link__bg1{
+    background-color: var(--link-bg1);
+}
+.link__bg2{
+    background-color: var(--link-bg2);
+}
+.link__bg3{
+    background-color: var(--link-bg3);
+}
+
+
+
 
 .footer__list{
     display: flex;
@@ -32,8 +44,8 @@
 }
 
 .footer__social-link{
-    background-color: var(--title-color);
-    color: var(--container-color);
+    
+    color: var(--title-color);
     font-size: 1.125rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
@@ -41,7 +53,7 @@
 }
 
 .footer__social-link:hover{
-    background-color: var(--title-color);
+    background-color: var(--container-color);
 }
 
 .footer__copy{

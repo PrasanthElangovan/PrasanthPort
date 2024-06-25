@@ -5,12 +5,16 @@
 }
 
 .skills__content{
-    background-color: var(--container-color);
     border: 1px solid rgb(0,0,0,0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
-
+.skills__bg1{
+    background-color: var(--skills-bg1);
+}
+.skills__bg2{
+    background-color: var(--skills-bg2);
+}
 .skills__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
@@ -45,6 +49,7 @@
 }
 .skills__level{
     font-size: var(--tiny-font-size); 
+    color: var(--text-color);
 }
 
 
