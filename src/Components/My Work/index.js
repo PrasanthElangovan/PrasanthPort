@@ -2,89 +2,106 @@ import {Component} from 'react'
 
 import ProjectItem from './ProjectItem'
 import TabItem from './TabItem'
-
 import "./index.css"
 
 
 
 const tabsList = [
-    {tabId: 'STATIC', displayText: 'Static'},
+    {tabId: 'MAIN', displayText: 'Main Work'},
     {tabId: 'RESPONSIVE', displayText: 'Responsive'},
-    {tabId: 'DYNAMIC', displayText: 'Dynamic'},
+    {tabId: 'STATIC', displayText: 'Static'},
   ]
   
   const projectsList = [
     {
       projectId: 0,
-      category: 'STATIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-s3-img.png',
-      title: 'Music Page',
+      category: 'MAIN',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474799/Jobby_l0wnie.png',
+      title: 'Jobby App',
       description:
-        'The music page enables the users to browse through the images of all-time favorite music albums.',
+        'Developed "Jobby," an advanced job search platform with a mobile-first UI, secure JWT-based authentication, personalized job recommendations, and real-time feedback mechanisms for enhanced user experience and efficiency.',
+      link:'https://jobby822.ccbp.tech/',
+      githubLink:'https://github.com/PrasanthElangovan/JobApp',
     },
     {
       projectId: 1,
-      category: 'STATIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-s4-img.png',
-      title: 'Tourism Website',
+      category: 'MAIN',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474800/nxtTrendz_sdkd7g.png',
+      title: 'Nxt Trendz',
       description:
-        'A tourism website enables the user to browse through the images of popular destinations.',
+        'Developed "NxtTrendz," an e-commerce platform replicating the functionalities of industry leaders, featuring a responsive user interface, secure JWT-based authentication, efficient routing, and optimized database management. Implemented server-side logic and API integrations to ensure smooth data flow and application functionality.',
+      link:'https://nxttrend82.ccbp.tech/',
+      githubLink:'https://github.com/PrasanthElangovan/NxtTrends',
     },
     {
       projectId: 2,
-      category: 'STATIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-s1-img.png',
-      title: 'Advanced Technologies',
+      category: 'MAIN',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474804/nxtwatch_se7dvj.png',
+      title: 'NxtWatch',
       description:
-        'A website that gives you a basic understanding of Advanced Technologies.',
+        'Led the development of "NxtWatch," a YouTube clone featuring a seamless user interface, secure authentication with JWT, sophisticated video categorization, dynamic recommendations, and efficient routing.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'https://github.com/PrasanthElangovan/Nxtwatch',
     },
     {
       projectId: 4,
       category: 'RESPONSIVE',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-r4-img.png',
-      title: 'VR Website',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720472230/Screenshot_2024-07-09_015839_p1ydh5.png',
+      title: 'Food Munch',
       description:
         'VR Website enables users to explore AR and VR Products and Industry happenings.',
+      link:'https://foodmunch822.ccbp.tech/',
+      githubLink:'',
     },
     {
       projectId: 5,
       category: 'RESPONSIVE',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-r2-img.png',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474800/nxtTrendz_sdkd7g.png',
       title: 'Food Munch',
       description: 'Food Much Website is a user-centric food tech website.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'',
     },
     {
       projectId: 6,
       category: 'RESPONSIVE',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-r3-img.png',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474804/nxtwatch_se7dvj.png',
       title: 'Portfolio',
       description:
         'A portfolio is the best alternative for a resume to showcase your skills to the digital world.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'',
     },
   
     {
       projectId: 8,
-      category: 'DYNAMIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-d3-img.png',
+      category: 'STATIC',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720472230/Screenshot_2024-07-09_015839_p1ydh5.png',
       title: 'Speed Typing Test',
       description:
         'Speed Typing Test Application is capable of calculating the time to type the randomly generated quote.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'',
     },
     {
       projectId: 9,
-      category: 'DYNAMIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-d1-img.png',
+      category: 'STATIC',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720473600/yoga_ck2hup.png',
       title: 'Random Joke Page',
       description:
         'Random Joke Page is an API-based dynamic Web Application that generates a new joke.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'',
     },
     {
       projectId: 10,
-      category: 'DYNAMIC',
-      imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-d2-img.png',
+      category: 'STATIC',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474309/flatpage_yx2z2m.png',
       title: 'Sizing An Image',
       description:
         'This is a dynamic web application capable of adjusting the size of an element using DOM manipulations.',
+      link:'https://nxtwatch822.ccbp.tech/',
+      githubLink:'',
     },
   ]
   
@@ -128,14 +145,14 @@ const tabsList = [
             ))}
           </ul>
   
-          <ul className="project-list-container">
+          
             {filteredProjectsList.map(projectDetails => (
               <ProjectItem
                 key={projectDetails.projectId}
                 projectDetails={projectDetails}
               />
             ))}
-          </ul>
+          
         </div>
       )
     }

@@ -1,8 +1,5 @@
 
   
-
-
-  
   .tabs-container {
     display: flex;
     justify-content: center;
@@ -10,12 +7,6 @@
     margin-bottom: var(--mb-2);
     padding: 2rem 0 6rem;
   }
-  
-
-
-
-
-
 
 
   @media screen and (min-width: 992px) {

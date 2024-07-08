@@ -1,9 +1,9 @@
 .header {
     width: 100%;
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 1;
     left: 0;
-    z-index: var(--z-fixed);
+    
     background-color: var(--body-color);
   }
   .nav {
