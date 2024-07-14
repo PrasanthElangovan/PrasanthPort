@@ -17,7 +17,7 @@ const ProjectItem = props => {
                         <a href={link} target='_blank' rel="noreferrer"><img src={imageUrl} alt={`title ${projectId}`} /></a>
                     </div>
                     <div className="project__text-box">
-                        <h2>{title}</h2>
+                        <h3>{title}</h3>
                         <p>{description}</p>
                         <div className='row-list-container'>
                             <ul className="row-list">
