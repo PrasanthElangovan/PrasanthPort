@@ -6,7 +6,7 @@ import './index.css'
 
 const ProjectItem = props => {
   const {projectDetails} = props
-  const {projectId, imageUrl, description, title,link} = projectDetails
+  const {projectId, imageUrl, description, title, link, tech} = projectDetails
   const isOdd = projectId % 2 === 0;
 
     return (
@@ -19,9 +19,16 @@ const ProjectItem = props => {
                     <div className="project__text-box">
                         <h2>{title}</h2>
                         <p>{description}</p>
+                        <div className='row-list-container'>
+                            <ul className="row-list">
+                                {tech.map((tec, index) => (
+                                <li key={`${projectId}-${index}`}>- {tec}</li>
+                                ))}
+                            </ul>
+                        </div>
                         <div  className="media-icons">
-            <a  href="https://github.com/PrasanthElangovan/JobApp"  className="icon link__bg1"><i className="uil uil-github-alt"></i></a>
-        </div>
+                            <a  href="https://github.com/PrasanthElangovan/JobApp"  className="icon link__bg1"><i className="uil uil-github-alt"></i></a>
+                        </div>
                     </div>
                 </div>
                 <hr className='linethrough'/>

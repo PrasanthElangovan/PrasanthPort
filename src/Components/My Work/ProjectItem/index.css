@@ -1,11 +1,9 @@
-
-
 .project-section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 100px;
+  padding: 80px 20px; /* Adjust padding as needed */
 }
 
 .project__container {
@@ -14,6 +12,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 1150px; /* Max width to fit inside the section */
+  width: 100%;
 }
 
 .project__main-title {
@@ -23,28 +23,34 @@
 
 .project__content {
   position: relative;
-  width: 1150px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .project__content.even {
   flex-direction: row-reverse; /* Reverse order for even sections */
 }
 
-.project__content.even .project__text-box{
-  transform: translate(80px, 20px);
+.project__content.even .project__text-box {
+  transform: translate(80px, 20px); /* Example translation */
   text-align: left;
   transition: transform 0.5s;
 }
-.project__content.even .project__text-box:hover{
+
+.project__content.even .project__text-box:hover {
   transform: scale(1.1);
+}
+
+.project__content.even .row-list {
+  justify-content: flex-start;
 }
 
 .project__content .project__image {
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 500px; /* Example width */
+  height: 400px; /* Example height */
   overflow: hidden;
 }
 
@@ -55,6 +61,7 @@
 
 .project__image:hover {
   filter: grayscale(0.23) contrast(0.7) saturate(1.1);
+  z-index: 333;
 }
 
 .project__content .project__image img {
@@ -70,19 +77,21 @@
 
 .project__content .project__text-box {
   z-index: 222;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--project-bg);
   backdrop-filter: blur(20px);
   padding: 20px;
   max-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  transform: translate(-80px, 20px);
+  transform: translate(-80px, 20px); /* Example translation */
   text-align: right;
   transition: transform 0.5s;
 }
-.project__text-box:hover{
+
+.project__content .project__text-box:hover {
   transform: scale(1.1);
 }
+
 .project__content .project__text-box h3 {
   color: var(--title-color);
   line-height: 36px;
@@ -93,40 +102,210 @@
 
 .project__content .project__text-box p {
   color: var(--text-color);
-    margin-top: 12px;
-    display: inline-block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+  margin-top: 12px;
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+  max-width: 100%; /* Ensure text fits within the container */
+  word-wrap: break-word; /* Allow long words to break */
+  overflow-wrap: break-word; /* Compatibility backup */
 }
 
-
-
-
-.icon{
+.icon {
   color: var(--title-color);
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
-
 }
 
-.icon:hover{
+.icon:hover {
   background-color: var(--container-color);
 }
-.link__bg1{
+
+.link__bg1 {
   background-color: var(--link-bg1);
 }
-.link__bg2{
+
+.link__bg2 {
   background-color: var(--link-bg2);
 }
-.link__bg3{
+
+.link__bg3 {
   background-color: var(--link-bg3);
 }
 
-.linethrough{
-  height: .5px;
+.linethrough {
+  height: 0.5px;
   width: 90%;
   background-color: var(--text-color);
   margin-top: 30px;
   border-style: hidden;
+}
+
+.row-list-container {
+  margin-bottom: 20px;
+}
+
+.row-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-size: small;
+  margin: 0;
+}
+
+.row-list li {
+  margin-right: 1.5rem;
+}
+/* Media Queries */
+@media screen and (max-width: 1169px) {
+  .project__image,
+  .project__text-box {
+    width: 100%;
+    height: 400px; /* Example height */
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+  }
+
+
+
+  .project__image {
+    z-index: 1;
+    transform: rotateY(0deg);
+  }
+
+  .project__text-box {
+    z-index: 2;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(64, 90, 68);
+    backdrop-filter: blur(20px);
+  }
+
+  .project__content:hover .project__text-box {
+    transform: rotateY(0deg);
+  }
+
+  .project__text-box h3,
+  .project__text-box p {
+    margin: 0;
+    color: var(--text-color);
+  }
+
+  .project__text-box {
+    padding: 20px;
+    background-color: rgb(64, 90, 68);
+    backdrop-filter: blur(20px);
+  }
+
+  .project__content.even .project__text-box:hover {
+    transform: none; /* Ensure no transform on hover */
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .project-section{
+    padding: 0 20px;
+  }
+  .project__image {
+    display: none; /* Hide image */
+  }
+
+  .project__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ensure the container takes full viewport height */
+  }
+
+  .project__text-box {
+    width: 100%;
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(64, 90, 68);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: auto; /* Center align */
+    transform: none; /* Remove transform */
+    transition: none; /* Disable transition */
+  }
+  .project__content .project__text-box {
+    transform: none;
+    transition: none; /* Ensure no transform on hover */
+  }
+  .project__content .project__text-box:hover {
+    transform: none; /* Ensure no transform on hover */
+  }
+  .project__content.even .project__text-box {
+    transform: none;
+    transition: none; /* Ensure no transform on hover */
+  }
+  .project__content.even .project__text-box:hover {
+    transform: none; /* Ensure no transform on hover */
+  }
+  .project__text-box h3,
+  .project__text-box p {
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+    max-width: 100%; /* Ensure text fits within the container */
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Compatibility backup */
+  }
+
+  .row-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project__image {
+    display: none; /* Hide image */
+  }
+
+  .project__content {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the container takes full viewport height */
+  }
+
+  .project__text-box {
+    width: 100%; /* Ensure full width */
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(64, 90, 68);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: auto; /* Center align */
+    transform: none; /* Remove transform */
+    transition: none; /* Disable transition */
+  }
+
+  .project__text-box:hover {
+    transform: none; /* Ensure no transform on hover */
+  }
+
+  .project__text-box h3,
+  .project__text-box p {
+    margin: 0;
+    color: var(--text-color);
+    max-width: 100%; /* Ensure text fits within the container */
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Compatibility backup */
+  }
 }

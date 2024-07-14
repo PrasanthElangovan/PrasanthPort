@@ -22,6 +22,7 @@ const tabsList = [
         'Developed "Jobby," an advanced job search platform with a mobile-first UI, secure JWT-based authentication, personalized job recommendations, and real-time feedback mechanisms for enhanced user experience and efficiency.',
       link:'https://jobby822.ccbp.tech/',
       githubLink:'https://github.com/PrasanthElangovan/JobApp',
+      tech: ['React JS','JS','CSS','JWT','API','Routing',],
     },
     {
       projectId: 1,
@@ -32,6 +33,7 @@ const tabsList = [
         'Developed "NxtTrendz," an e-commerce platform replicating the functionalities of industry leaders, featuring a responsive user interface, secure JWT-based authentication, efficient routing, and optimized database management. Implemented server-side logic and API integrations to ensure smooth data flow and application functionality.',
       link:'https://nxttrend82.ccbp.tech/',
       githubLink:'https://github.com/PrasanthElangovan/NxtTrends',
+      tech: ['React JS','JS','CSS','JWT','API','Routing'],
     },
     {
       projectId: 2,
@@ -42,6 +44,7 @@ const tabsList = [
         'Led the development of "NxtWatch," a YouTube clone featuring a seamless user interface, secure authentication with JWT, sophisticated video categorization, dynamic recommendations, and efficient routing.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'https://github.com/PrasanthElangovan/Nxtwatch',
+      tech: ['React JS','JS','CSS','JWT','API','Routing'],
     },
     {
       projectId: 4,
@@ -52,6 +55,7 @@ const tabsList = [
         'VR Website enables users to explore AR and VR Products and Industry happenings.',
       link:'https://foodmunch822.ccbp.tech/',
       githubLink:'',
+      tech: ['HTML','CSS','Bootstrap'],
     },
     {
       projectId: 5,
@@ -61,6 +65,7 @@ const tabsList = [
       description: 'Food Much Website is a user-centric food tech website.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
+      tech: ['React','HTML','CSS','JS'],
     },
     {
       projectId: 6,
@@ -71,6 +76,7 @@ const tabsList = [
         'A portfolio is the best alternative for a resume to showcase your skills to the digital world.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
+      tech: ['React','HTML','CSS','JS'],
     },
   
     {
@@ -82,6 +88,7 @@ const tabsList = [
         'Speed Typing Test Application is capable of calculating the time to type the randomly generated quote.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
+      tech: ['Bootstrap','HTML','CSS'],
     },
     {
       projectId: 9,
@@ -92,6 +99,7 @@ const tabsList = [
         'Random Joke Page is an API-based dynamic Web Application that generates a new joke.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
+      tech: ['Bootstrap','HTML','CSS'],
     },
     {
       projectId: 10,
@@ -102,6 +110,7 @@ const tabsList = [
         'This is a dynamic web application capable of adjusting the size of an element using DOM manipulations.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
+      tech: ['Bootstrap','HTML','CSS'],
     },
   ]
   

@@ -19,6 +19,8 @@
   --skills-bg1:#465A5E;
   --skills-bg2:#695353;
 
+  --project-bg:#43635f;
+
   --contact-bg1:#484C4F;
   --contact-bg2:#6A5C6E;
 
@@ -43,7 +45,7 @@
 
   --skills-dark-bg1:#4A5259;
   --skills-dark-bg2:#343638;
-
+ --project-dark-bg:rgba(37, 37, 37, 0.693);
   --contact-dark-bg1:#556B5B;
   --contact-dark-bg2:#3D4036;
 
@@ -114,6 +116,7 @@
 
   --skills-bg1:#465A5E;
   --skills-bg2:#695353;
+  --project-bg:#527c77a5;
 
   --contact-bg1:#484C4F;
   --contact-bg2:#6A5C6E;
@@ -140,6 +143,8 @@
 
   --skills-bg1:var(--skills-dark-bg1);
   --skills-bg2:var(--skills-dark-bg2);
+
+  --project-bg: var(--project-dark-bg);
 
   --contact-bg1:var(--contact-dark-bg1);
   --contact-bg2:var(--contact-dark-bg2);
