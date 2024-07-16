@@ -6,7 +6,7 @@ import './index.css'
 
 const ProjectItem = props => {
   const {projectDetails} = props
-  const {projectId, imageUrl, description, title, link, tech} = projectDetails
+  const {projectId, imageUrl, description, title, link, tech,githubLink} = projectDetails
   const isOdd = projectId % 2 === 0;
 
     return (
@@ -27,7 +27,7 @@ const ProjectItem = props => {
                             </ul>
                         </div>
                         <div  className="media-icons">
-                            <a  href="https://github.com/PrasanthElangovan/JobApp"  className="icon link__bg1"><i className="uil uil-github-alt"></i></a>
+                            <a  href={githubLink} target='_blank' rel="noreferrer" className="icon link__bg1"><i className="uil uil-github-alt"></i></a>
                         </div>
                     </div>
                 </div>

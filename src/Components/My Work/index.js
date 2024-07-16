@@ -9,7 +9,6 @@ import "./index.css"
 const tabsList = [
     {tabId: 'MAIN', displayText: 'Main Work'},
     {tabId: 'RESPONSIVE', displayText: 'Responsive'},
-    {tabId: 'STATIC', displayText: 'Static'},
   ]
   
   const projectsList = [
@@ -49,68 +48,34 @@ const tabsList = [
     {
       projectId: 4,
       category: 'RESPONSIVE',
-      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720472230/Screenshot_2024-07-09_015839_p1ydh5.png',
-      title: 'Food Munch',
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1721130463/money_manager_f9kvir.png',
+      title: 'Money Manager',
       description:
-        'VR Website enables users to explore AR and VR Products and Industry happenings.',
-      link:'https://foodmunch822.ccbp.tech/',
-      githubLink:'',
-      tech: ['HTML','CSS','Bootstrap'],
+        'Developed a Money Manager App using React.js, enabling users to track income, expenses, and balance with dynamic updates. Implemented functionality for adding and deleting transactions, ensuring real-time calculation of financial summaries. Utilized responsive design principles and React state management for a seamless user experience.',
+      link:'https://moneymanger822.ccbp.tech/',
+      githubLink:'https://github.com/PrasanthElangovan/moneymanager',
+      tech: ['HTML','CSS','Reactjs','Javascript'],
     },
     {
       projectId: 5,
       category: 'RESPONSIVE',
-      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474800/nxtTrendz_sdkd7g.png',
-      title: 'Food Munch',
-      description: 'Food Much Website is a user-centric food tech website.',
-      link:'https://nxtwatch822.ccbp.tech/',
-      githubLink:'',
-      tech: ['React','HTML','CSS','JS'],
+      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1721134053/IPL_vhnhwc.png',
+      title: 'IPL DashBoard',
+      description: 'Developed an IPL Dashboard App using React.js, incorporating RESTful API calls to display team details and recent match information. Implemented responsive design with custom CSS and used React Router for seamless navigation. Enhanced user experience by integrating animated loaders and dynamic content updates.',
+      link:'https://ipldashboard822.ccbp.tech/',
+      githubLink:'https://github.com/PrasanthElangovan/IPL',
+      tech: ['React','HTML','CSS','JS','Reactjs'],
     },
     {
       projectId: 6,
       category: 'RESPONSIVE',
-      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474804/nxtwatch_se7dvj.png',
-      title: 'Portfolio',
-      description:
-        'A portfolio is the best alternative for a resume to showcase your skills to the digital world.',
-      link:'https://nxtwatch822.ccbp.tech/',
-      githubLink:'',
-      tech: ['React','HTML','CSS','JS'],
-    },
-  
-    {
-      projectId: 8,
-      category: 'STATIC',
       imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720472230/Screenshot_2024-07-09_015839_p1ydh5.png',
-      title: 'Speed Typing Test',
+      title: 'Food Munch',
       description:
-        'Speed Typing Test Application is capable of calculating the time to type the randomly generated quote.',
+        'Food Munch is a responsive web project that showcases a variety of delicious food options. It features a sleek, modern design with sections highlighting why to choose us, menu exploration, delivery and payment options, and customer appreciation. The project includes interactive elements like modals, buttons, and smooth navigation. Built with Bootstrap, it ensures a seamless user experience across devices.',
       link:'https://nxtwatch822.ccbp.tech/',
       githubLink:'',
-      tech: ['Bootstrap','HTML','CSS'],
-    },
-    {
-      projectId: 9,
-      category: 'STATIC',
-      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720473600/yoga_ck2hup.png',
-      title: 'Random Joke Page',
-      description:
-        'Random Joke Page is an API-based dynamic Web Application that generates a new joke.',
-      link:'https://nxtwatch822.ccbp.tech/',
-      githubLink:'',
-      tech: ['Bootstrap','HTML','CSS'],
-    },
-    {
-      projectId: 10,
-      category: 'STATIC',
-      imageUrl: 'https://res.cloudinary.com/dmzv0pa0g/image/upload/v1720474309/flatpage_yx2z2m.png',
-      title: 'Sizing An Image',
-      description:
-        'This is a dynamic web application capable of adjusting the size of an element using DOM manipulations.',
-      link:'https://nxtwatch822.ccbp.tech/',
-      githubLink:'',
-      tech: ['Bootstrap','HTML','CSS'],
+      tech: ['HTML','CSS','JS','Bootstrap'],
     },
   ]
   
@@ -138,9 +103,7 @@ const tabsList = [
         <div data-aos="fade-up" data-aos-duration="2000" className="about section container" id='projects'>
           <h1 className="section__title">My Work</h1>
           <p className="section__subtitle">
-            Your skills and achievements showcase your strengths and abilities.
-            Speak about any new skills or software you learnt to perform the
-            project responsibilities.
+          I have developed a diverse range of web applications using React.js, focusing on dynamic content, user authentication, and responsive design. My projects include platforms for job searching, e-commerce, video streaming, food delivery, sports dashboards, and financial management. These projects demonstrate my proficiency in modern web development techniques, including REST API integration, state management, and responsive UI design.
           </p>
   
           <ul className="tabs-container">

@@ -18,14 +18,14 @@ const Footer = () =>{
                     </li>
                 </ul>
                 <div className="footer__social">
-                    <a href="https://www.facebook.com/siva.prasanthsp.1/" className="footer__social-link link__bg1" target="_blank" rel="noopener noreferrer">
-                        <i class="bx bxl-facebook"></i>
+                    <a href="https://www.linkedin.com/in/prasanthelangovanprofile/" className="footer__social-link link__bg1" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-dribbble"></i>
                     </a>
                     <a href="https://www.instagram.com/prasanth_elangovan/" className="footer__social-link link__bg2" target="_blank" rel="noopener noreferrer">
-                        <i class="bx bxl-instagram"></i>
+                        <i class="uil uil-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/prasanthelangovanprofile/" className="footer__social-link link__bg3" target="_blank" rel="noopener noreferrer">
-                        <i class="bx bxl-twitter"></i>
+                    <a href="https://github.com/PrasanthElangovan" className="footer__social-link link__bg3" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-github-alt"></i>
                     </a>
                 </div>
                 <span className="footer__copy">
