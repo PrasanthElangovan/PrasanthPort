@@ -4,7 +4,6 @@ import "./index.css";
 
 import AboutImg from "../../Assets/prasanth.jpg";
 
-import CV from "../../Assets/PrasanthResumea.pdf";
 
 import Info from "./Info";
 
@@ -23,7 +22,7 @@ eager to apply my technical skills in HTML, CSS, JavaScript, and React to create
 responsive and engaging user interfaces. With a solid understanding of both frontend and back-end frameworks, I aim to contribute to a dynamic team by utilizing
 modern development practices and a strong commitment to collaborative problemsolving.
           </p>
-          <a download="" href={CV} className="button button--flex">Download CV</a>
+          <a download="" href="https://drive.google.com/file/d/1uGrdFYWrOkcmyqyoUWvcAHCgEjaW7txN/view?usp=sharing" className="button button--flex">Download CV</a>
         </div>
       </div>
     </section>
